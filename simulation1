@@ -1,0 +1,966 @@
+#!/bin/bash                                                                     
+ # LPIC-101-400-102-400 Study Program
+                                                                           
+                                                                             
+ #Maker: Picasso Lyra                                                         
+                                                                             
+                                                                              
+ #1ª Version    Data:17/08/2018                                               
+                                                                                 
+                                                                              
+ # run ./simulado1 | . silulado1 | sh simulado1 | bash simulado1  
+                                                                               
+                                                                             
+                                                                             
+                                                                               
+
+clear
+ #stty intr ""
+#trap "" 2 ; trap "" 20
+ until false
+do
+echo "            1º-Question-LPIC-1-400 /102-400                $(date +'%d/%m/%Y-- %H:%M')
+
+
+ Which of the following redirects the stdout and stderr of a command to the same log.txt file?
+a comand >> log.txt
+b comand > log.tx
+c log.txt << comand
+d comand 2> log.txt
+e comand &> log.txt  "/
+
+echo
+read -p "Digite Sua Respostas...." rst
+
+clear
+case $rst in
+ 
+
+       [a,b,c,d]) echo "Resposta Errada Tente Novamente"
+                           continue  
+                           clear
+ ;;                    
+
+       [e]) echo "Resposta Certa , Vamos ...Para Próxima "
+                   
+                
+                       sleep 1
+                                break
+                 
+                  ;;
+
+          *)  echo "Digite uma resposta válida..."
+
+esac
+
+  done
+
+clear     
+
+
+
+
+
+ clear
+#trap "" 2 ; trap "" 20
+
+until false
+do
+echo "             2º-Simulado-LPIC-1-400 /102-400                       $(date +'%d/%m/%Y-- %H:%M')
+
+
+
+Um administrador do sistema deseja saber qual foi a última vez que a máquina foi iniciada. Qual o comando ele pode utilizar  ?
+
+a uname
+b uptime
+c free
+d init
+e hostname   "
+
+echo
+ read -p "Digite Sua Respostas...." trs
+
+clear
+case $trs in
+ 
+
+       [a,c,d,e]) echo "Resposta Errada Tente Novamente"
+                           continue  
+                           clear
+ ;;                    
+
+       [b]) echo "Resposta Certa , Vamos ...Para Próxima "
+                        sleep 1
+
+                       break
+                 
+                  ;;
+
+          *)  echo "Digite uma resposta válida..."
+
+
+esac
+
+  done
+clear
+ 
+
+
+
+
+ clear
+#trap "" 2 ; trap "" 20
+
+
+
+
+RESUL2='a,c,d,'
+RESUL3='b,e'
+RS='b'
+RR='e'
+until false
+do
+echo "             3º-Simulado-LPIC-1-400 /102-400                       $(date +'%d/%m/%Y-- %H:%M')
+
+
+
+Quais dos comandos abaixo são formas válidas de se criar um backup dos arquivos de configuração do diretório /etc usando o comando tar ? (Selione 2)   ?
+
+1 tar -czf /etc/*.conf backup.tar.gz
+2 ls /etc/*.conf | xargs tar czf backup.tar.gz
+3 ls /etc/*.conf | tar czf backup.tar.gz -
+4 xargs /etc/*.conf | tar czf backup.tar.gz -
+8 tar zcvpf  backup.tgz /etc/*conf   "
+echo
+echo "Escolha uma letra , como resposta !"
+echo
+echo "a=2,8---b=1,8---c=3,2---d=4,1---e=3,1"
+ 
+echo
+ read -p "Digite Sua Respostas...." trs
+
+clear
+case $trs in
+ 
+
+   [a,c,e,b]) echo "Resposta Errada Tente Novamente"
+                           continue  
+                           clear
+ ;;                    
+
+      [d]) echo "Resposta Certa , Vamos ...Para Próxima "
+                        sleep 1
+
+                       break
+                 
+                  ;;
+
+          *)  echo "Digite uma resposta válida..."
+
+
+esac
+
+  done
+clear
+
+
+
+
+  clear
+#trap "" 2 ; trap "" 20
+
+until false
+do
+
+
+echo "             4º-Simulado-LPIC-1-400 /102-400                       $(date +'%d/%m/%Y-- %H:%M')
+
+
+
+Qual a primeira partição do sistema a ser montada após o processo de boot ?
+
+a /boot
+b /proc
+c /
+d /etc
+e /init  " 
+
+echo
+ read -p "Digite Sua Respostas...." trs
+
+clear
+
+#trs=$(yad --image="dialog-question"  --title="1º-Simulado LPCI-101-400 & 102-400" \
+#---width="680" --height="200"  \
+#--text="Qual a primeira partição a ser criada após o processo de boot  " \
+#--text-align="center" --borders="100" \
+#  --button="a./boot" --button="b./proc" --button="c./" --button="d./"etc \
+#)
+case $trs in
+
+ 
+
+       [a,d,b,e]) echo "Resposta Errada Tente Novamente"
+                           continue  
+                           clear
+ ;;                    
+
+       [c]) echo "Resposta Certa , Vamos ...Para Próxima "
+                      echo
+                      echo 
+                       "O diretório-raiz (/)  é  a  primeira  partição  montada . Após isso o sistema terá 
+                            acesso aos principais arquivos de configurações no /etc, como exemplos o /etc/fstab
+                            e com isso obterá as informações sobre as demais partições a serem montadas."
+                         sleep 8
+
+                       break
+                 
+                  ;;
+
+          *)  echo "Digite uma resposta válida..."
+
+
+esac
+
+  done
+clear 
+
+
+
+
+ 
+ clear
+#trap "" 2 ; trap "" 20
+
+until false
+do
+echo "             8º-Simulado-LPIC-1-400 /102-400                       $(date +'%d/%m/%Y-- %H:%M')
+
+
+
+Em um sistema com GRUB 2 , o administrador realizou alterações no arquivo de configurão /etc/default/grub. Após isso , o que ele deve fazer para que as alterações sejam efetivadas ?
+
+a Executar o comando install-grub
+b Criar uma cópia do arquivo /etc/default/grub em /boot/grub
+c Executar o comando update-grub
+d Montar a partição /boot
+e Ele não precisa fazer nada . Assim que a máquina for reiniciada as novas confirurações serão habilitadas "
+
+
+echo
+ read -p "Digite Sua Respostas...." trs
+
+clear
+case $trs in
+ 
+
+       [a,b,d,e]) echo "Resposta Errada Tente Novamente"
+                           continue  
+                           clear
+ ;;                    
+
+       [c]) echo "Resposta Certa , Vamos ...Para Próxima "
+                        sleep 1
+
+                       break
+                 
+                  ;;
+
+          *)  echo "Digite uma resposta válida..."
+
+
+esac
+
+  done
+clear 
+
+
+
+
+ 
+ clear
+#trap "" 2 ; trap "" 20
+
+until false
+do
+echo "             8º-Simulado-LPIC-1-400 /102-400                       $(date +'%d/%m/%Y-- %H:%M')
+
+
+Quais dos comandos abaixo podem ajudar um usuário a encontrar informções e ajuda sobre um comando ?(Selione 3)
+
+1 history
+2 man
+3 whatis
+4 info
+8 whereis   "
+echo
+echo "Escolha uma letra com resposta"
+echo "a=8,4,2----b=2,3,4----c=1,2,4---d=2,4,8---e=3,4,8"
+ read -p "Digite Sua Respostas...." trs
+
+clear
+case $trs in
+ 
+
+       [a,c,d,e]) echo "Resposta Errada Tente Novamente"
+                           continue  
+                           clear
+ ;;                    
+
+       [b]) echo "Resposta Certa , Vamos ...Para Próxima" 
+               echo
+               echo
+              echo " Os comandos man e info retornarão , na maioria dos casos , um manual completo 
+                     de cada comando. O whatis trará uma definição breve da função da ferramenta."                        
+
+                        sleep 8
+
+                       break
+                 
+                  ;;
+
+          *)  echo "Digite uma resposta válida..."
+
+
+esac
+
+  done
+clear 
+
+
+
+
+  clear
+#trap "" 2 ; trap "" 20
+
+until false
+do
+echo "             6º-Simulado-LPIC-1-400 /102-400                       $(date +'%d/%m/%Y-- %H:%M')
+
+Quais comandos poderão exibir as mensagens geradas pelo kernel durante o processo de boot do sistema ? (Selione 2 Respostas)
+
+
+1 logger
+2 show-boot
+3 wall
+4 dmesg
+8 less /var/log/dmesg "
+
+echo
+echo "Esolha uma letra como resposta"
+echo
+echo "3,4=a  1,8=b 4,8=c 1,2=d  8,2=e"
+ read -p "Digite Sua Respostas...." trs
+
+clear
+case $trs in
+ 
+
+       [a,b,d,e]) echo "Resposta Errada Tente Novamente"
+                           continue  
+                           clear
+ ;;                    
+
+       [c]) echo "Resposta Certa , Vamos ...Para Próxima "
+                        
+              echo "O comando  dmesg tem como saída um registro dos logs do boot do sistema ,
+                    a mesma informação pode ser encontrada no arquivo /var/log/dmesg , no 
+                    entanto atualmente nem todas as distribuições incluem esse arquivo. O 
+                    logger e usado para gera logs e o wall par enviar uma mensagem a todos os 
+                    usuários logados no sitema."        
+sleep 8
+
+                       break
+                 
+                  ;;
+
+          *)  echo "Digite uma resposta válida..."
+
+
+esac
+
+  done
+clear 
+
+
+
+
+
+ 
+ clear
+#trap "" 2 ; trap "" 20
+
+until false
+do
+echo "             6º-Simulado-LPIC-1-400 /102-400                       $(date +'%d/%m/%Y-- %H:%M')
+
+
+
+Informe o comando que pode ser ultilizado para enviar uma mensagem a todos os usuários conectados ao sistema no momento ?
+
+a yell
+b notify
+c broadcast
+d wall
+e messeng "
+
+
+echo
+ read -p "Digite Sua Respostas...." trs
+
+clear
+case $trs in
+ 
+
+       [a,b,e]) echo "Resposta Errada Tente Novamente"
+                           continue  
+                           clear
+ ;;                    
+
+       [d]) echo "Resposta Certa , Vamos ...Para Próxima "
+                        echo
+                        echo
+                       echo "O  wall irá enviar a mensagem que seguir o comando
+                             diretamente para o terminal de todos os usuários 
+                             conectados no sistema."
+sleep 8
+
+                       break
+                 
+                  ;;
+
+          *)  echo "Digite uma resposta válida..."
+
+
+esac
+
+  done
+clear 
+
+
+
+
+ 
+  clear
+#trap "" 2 ; trap "" 20
+until false
+do
+echo "             7º-Simulado-LPIC-1-400 /102-400                       $(date +'%d/%m/%Y-- %H:%M')
+
+
+
+De acordo com FHS , em qual diretório são encontrados os arquivos de manuais dos sistemas ?
+
+a /usr/share
+b /usr/lib
+c /var/doc
+d /opt/man
+e /var/lib "
+
+
+echo
+ read -p "Digite Sua Respostas...." trs
+
+clear
+case $trs in
+ 
+
+       [b,d,e]) echo "Resposta Errada Tente Novamente"
+                           continue  
+                           clear
+ ;;                    
+
+       [a]) echo "Resposta Certa , Vamos ...Para Próxima "
+                        
+               echo "O /usr/share  contém  diversos  arquivos  de  sistema  , entre
+                     eles as páginas de documentação em /usr/share/doc e de manuais 
+                     em /usr/share/man."
+sleep 8
+
+                       break
+                 
+                  ;;
+
+          *)  echo "Digite uma resposta válida..."
+
+
+esac
+
+  done
+clear 
+
+
+
+
+ 
+
+
+ 
+ clear
+#trap "" 2 ; trap "" 20
+until false
+do
+echo "             8º-Simulado-LPIC-1-400 /102-400                       $(date +'%d/%m/%Y-- %H:%M')
+
+
+
+Qual das seguintes opções não é um gerenciador de serviços no Linux ?
+
+a Upstart
+b Sysv
+c Anacron
+d systemd
+         "
+
+
+echo
+ read -p "Digite Sua Respostas...." trs
+
+clear
+case $trs in
+ 
+
+       [a,b,d,]) echo "Resposta Errada Tente Novamente"
+                           continue  
+                           clear
+ ;;                    
+
+       [c]) echo "Resposta Certa , Vamos ...Para Próxima "
+            echo
+            echo
+                       
+               echo " System V , ou SysV , é  gerenciador  de  serviços  que  foi usado  originalmente
+                      nos ambientes Linux , herdado d o  Unix . Atualmente a maioria das distribuições 
+                      ultizam o systemd e algumas o Upstart. O Anacron é uma ferramenta de agendamento 
+                      de processos."
+
+ sleep 8
+
+                       break
+                 
+                  ;;
+
+          *)  echo "Digite uma resposta válida..."
+
+
+esac
+
+  done
+clear 
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+ clear
+trap "" 2 ; trap "" 20
+until false
+do
+echo "             9º-Simulado-LPIC-1-400 /102-400                       $(date +'%d/%m/%Y-- %H:%M')
+
+
+
+No VI , quais dos comandos abaixo podem ser ultilizados para salvar um documento e em seguida sair do editor de texto ?(Selecione 3)
+
+1 :q!
+2 :wq
+3 :x
+4 ZZ
+8 XX         "
+
+
+echo
+echo "Escolha uma letra como resposta"
+echo
+echo "a=2,3,4----b=1,8,2----c=2,3,4---d=8,4,3---e=1,4,8"
+echo 
+ read -p "Digite Sua Respostas...." trs
+
+clear
+case $trs in
+ 
+
+       [a,b,d,e]) echo "Resposta Errada Tente Novamente"
+                           continue  
+                           clear
+ ;;                    
+
+       [c]) echo "Resposta Certa , Vamos ...Para Próxima "
+                       echo
+                       echo
+                    echo "Os comandos :wq , :x , e ZZ irão salvar o documento e sair do VI.
+                          :q! sai sem salvar e XX não tem nenhuma função." 
+ sleep 8
+
+                       break
+                 
+                  ;;
+
+          *)  echo "Digite uma resposta válida..."
+
+
+esac
+
+  done
+clear 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+ clear
+trap "" 2 ; trap "" 20
+until false
+do
+echo "             9º-Simulado-LPIC-1-400 /102-400                       $(date +'%d/%m/%Y-- %H:%M')
+
+
+
+Ao analizar as partições de um sistema , foram identificadas 2 partições com o tipo 82 (0x82). O que iso significa ?
+
+a Duas partições do sistema são usadas para os dados da instalação linux.
+b O sistema ultiliza duas partições para compor sua área de swap.
+c Duas partições do sistema estão sendo ultilizadas para o sistema operacional windows.
+d Há um erro na definição e partições , pois pode haver apenas uma partição defini com o tipo 82.
+         "
+
+
+echo
+ read -p "Digite Sua Respostas...." trs
+
+clear
+case $trs in
+ 
+
+       [a,c,d,]) echo "Resposta Errada Tente Novamente"
+                           continue  
+                           clear
+ ;;                    
+
+       [b]) echo "Resposta Certa , Vamos ...Para Próxima 
+                       
+                   É importante lembrar que uma partição com ID 82 (0x82) será designada para área de swap,
+                         enquando que partições com ID 83 (0x83) , Linux Native , serão utilizadas  para arquivos
+                         do Linux. A área de swap de um sistema pode ser composto de várias partições." 
+ 
+sleep 8
+
+                       break
+                 
+                  ;;
+
+          *)  echo "Digite uma resposta válida..."
+
+
+esac
+
+  done
+clear 
+
+
+
+
+ 
+
+
+ 
+ clear
+#trap "" 2 ; trap "" 20
+until false
+do
+echo "             10º-Simulado-LPIC-1-400 /102-400                       $(date +'%d/%m/%Y-- %H:%M')
+
+
+
+No GRUB2 , qual arquivo você deve configurar para definir o tempo de espera para iniciar o boot ?
+
+a /etc/default/grub
+b /boot/grub/grub.conf
+c /boot/grub/menu.lst
+d /etc/grub.d/grub.conf
+d /etc/grub/grub.cfg
+         "
+
+
+echo
+ read -p "Digite Sua Respostas...." trs
+
+clear
+case $trs in
+ 
+
+       [b,d,c,e]) echo "Resposta Errada Tente Novamente"
+                           continue  
+                           clear
+ ;;                    
+
+       [a]) echo "Resposta Certa , Vamos ...Para Próxima "
+                       break
+ sleep 8
+
+                            
+                            
+          *) echo "Digite uma resposta válida"                  
+                            
+                            
+                            
+                            
+              
+              
+              
+              
+              
+              
+              
+                       esac
+                 
+                  ;;
+
+
+  done
+clear 
+
+
+d
+
+
+ 
+
+
+ 
+ clear
+trap "" 2 ; trap "" 20
+until false
+do
+echo "             11º-Simulado-LPIC-1-400 /102-400                       $(date +'%d/%m/%Y-- %H:%M')
+
+
+
+Ao ultilizar o comando split em um arquivo , por padrão qual será o tamanho máximo de cada novo arquivo criado  ?
+
+a 1000 bytes
+b 1000 linhas
+c 100 linhas
+d 812 bytes
+d 800 linhas
+         "
+
+
+echo
+ read -p "Digite Sua Respostas...." trs
+
+clear
+case $trs in
+ 
+
+       [a,d,c,e]) echo "Resposta Errada Tente Novamente"
+                           continue  
+                           clear
+ ;;                    
+
+       [b]) echo "Resposta Certa , Vamos ...Para Próxima "
+                        echo
+                        echo
+                        echo
+                  echo "Sem nenhum parâmetro , o split dividirá um arquivo em outros arquivos de 1000 linhas cada. 
+                        A opção -l pode ser ultilizada para definir a quantidade de linhas desejada e a opção -b 
+                        para definir em bytes."     
+sleep 8
+
+                       break
+                 
+                  ;;
+
+          *)  echo "Digite uma resposta válida..."
+
+
+esac
+
+  done
+clear 
+
+
+ 
+
+
+ 
+ clear
+trap "" 2 ; trap "" 20
+until false
+do
+echo "             12º-Simulado-LPIC-1-400 /102-400                       $(date +'%d/%m/%Y-- %H:%M')
+
+
+
+Qual comando exibe as bibliotecas compartilhadas ultilizadas por determinado comando ?
+
+a ldconfig
+b ldd
+c ld-update
+d updatedb
+d ldcache
+         "
+
+
+echo
+ read -p "Digite Sua Respostas...." trs
+
+clear
+case $trs in
+ 
+
+       [a,d,c,e]) echo "Resposta Errada Tente Novamente"
+                           continue  
+                           clear
+ ;;                    
+
+       [b]) echo "Resposta Certa , Vamos ...Para Próxima "
+               echo
+               echo
+                 echo                  
+                 echo "o ldd seguido do nome da aplicação exibirá as bibliotecas dinâmicas utilizadas por essas aplicação. 
+                       O ldconfig é utilizado para atualizar a base de diretórios em que as bibliotecas compartilhadas 
+                       podem ser encontradas , na prática o ldconfig atualiza o arquivo /etc/ld.cache com base nas 
+                       configurações do /etc/ld.so.conf . updatedb atualiza a base utiliza a base utilizada pelo comando 
+                       locate."
+
+sleep 8
+
+                       break
+                 
+                  ;;
+
+          *)  echo "Digite uma resposta válida..."
+
+
+esac
+
+  done
+clear 
+
+
+
+ 
+
+
+ 
+ clear
+trap "" 2 ; trap "" 20
+until false
+do
+echo "             13º-Simulado-LPIC-1-400 /102-400                       $(date +'%d/%m/%Y-- %H:%M')
+
+
+
+Em um sistema Debian , em qual arquivo de configuração podem ser encontrados os repositórios de pacotes ultilizados pelo APT ?
+
+a /etc/apt.conf
+b /etc/apt/sources.list
+c /etc/sources.list
+d /etc/apt.d/sources.list
+         "
+
+
+echo
+ read -p "Digite Sua Respostas...." trs
+
+clear
+case $trs in
+ 
+
+       [a,d,c,e]) echo "Resposta Errada Tente Novamente"
+                           continue  
+                           clear
+ ;;                    
+
+       [b]) echo "Resposta Certa , Vamos ...Para Próxima "
+                       
+                   echo "O arquivo /etc/apt/sources.list contém uma lista de URLs e parâmetros utilizados 
+                         pelos comandos do APT para verificar e fazer o download de novos pacotes."
+ sleep 8
+
+                       break
+                 
+                  ;;
+
+          *)  echo "Digite uma resposta válida..."
+
+
+esac
+
+  done
+clear 
+
+
+
+ 
+
+
+ 
+ clear
+trap "" 2 ; trap "" 20
+until false
+do
+echo "             14º-Simulado-LPIC-1-400 /102-400                       $(date +'%d/%m/%Y-- %H:%M')
+
+
+
+Qual ferramenta do Debian pode ser ultilizada para reconfigurar um pacote já instalado , permitindo que definições para a instalação ?
+
+a aptitude 
+b apt-get update 
+c dpkg-reconfigure
+d dselect
+d apt-reconfig
+         "
+
+
+echo
+ read -p "Digite Sua Respostas...." trs
+
+clear
+case $trs in
+ 
+
+       [b,d,a,e]) echo "Resposta Errada Tente Novamente"
+                           continue  
+                           clear
+ ;;                    
+
+       [c]) echo "Resposta Certa , Vamos ...Para Próxima "
+                 echo "O comando dpkg-reconfigure pode ser utilizado para reconfigurar um pacote já instalado 
+                       como por exemplo as configurações do teclado com o dpkg-reconfigure keyboard-configuration. 
+                       O aptitude pode ser utilizado para instalação e verificação de pacotes disponíveis , o 
+                       apt-get update apenas atualiza as informações do repositório e o dselect é uma interface 
+                       com menus para dpkg."                       
+
+ sleep 8
+
+                       break
+                 
+                  ;;
+
+          *)  echo "Digite uma resposta válida..."
+
+
+esac
+
+  done
+clear 
+
