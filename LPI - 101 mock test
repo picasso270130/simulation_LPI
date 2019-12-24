@@ -3,12 +3,9 @@
                                                                            
                                                                              
  #Maker: Picasso Lyra                                                         
-                                                                             
-                                                                              
- #1ª Version    Data:17/08/2018                                               
-                                                                                 
-                                                                              
- # run ./simulado1 | . silulado1 | sh simulado1 | bash simulado1  
+  #I'm editing for english                                                                           
+   #1ª Version    Date latest update :2019-12-24                                       
+     # run ./simulation1 | . silulation1 | sh simulation1 | bash simulation1  
                                                                                
                                                                              
                                                                              
@@ -23,6 +20,7 @@ echo "            1º-Question-LPIC-1-400 /102-400                $(date +'%d/%m
 
 
  Which of the following redirects the stdout and stderr of a command to the same log.txt file?
+ 
 a comand >> log.txt
 b comand > log.tx
 c log.txt << comand
@@ -30,13 +28,13 @@ d comand 2> log.txt
 e comand &> log.txt  "/
 
 echo
-read -p "Digite Sua Respostas...." rst
+read -p "Type your anwser ...." rst
 
 clear
 case $rst in
  
 
-       [a,b,c,d]) echo "Resposta Errada Tente Novamente"
+       [a,b,c,d]) echo "wrong anwser try again"
                            continue  
                            clear
  ;;                    
